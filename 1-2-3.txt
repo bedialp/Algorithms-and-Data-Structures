@@ -1,0 +1,56 @@
+***************proje 1***************
+
+[22,27,16,2,18,6] => insertion sort
+
+					    [22,27,16,2,18,6]  n
+1) en kucugu ilk elemanla degistir   	    [2,27,16,22,18,6] n-1
+2) 2. kucuk eleman		            [2,6,16,22,18,27] n-2
+3) 3. eleman ayni kaldi 		    [2,6,16,22,18,27] n-3	hepsi O(n^2)		
+4) 4. kucuk eleman 	 		    [2,6,16,18,22,27] n-4
+5) elemanlar ayni islem bitti               [2,6,16,18,22,27] n-5
+
+
+18 ortada oldugu icin avarage case
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin selection sort'a gore ilk 4 adimini yaziniz.
+ 
+1) en küçüğü ilk elemanla degistir    	    [2,3,5,8,7,9,4,15,6] 
+2) 2. eleman ayni kaldi                     [ 2,3,5,8,7,9,4,15,6]
+3) 3. kucuk eleman 			    [2,3,4,8,7,9,5,15,6]  
+4) 4. kucuk eleman		            [2,3,4,5,7,9,8,15,6] 
+
+
+***************proje 2***************
+
+[16,21,11,8,12,22] => (bol ve yonet)
+
+1) ikiye bol 		[16,21,11] |  [8,12,22]
+
+2) tekrar bol 		[16] | [21,11] | [8] | [12,22]
+
+3) teke dusur 		[16] | [21] | [11] | [8] | [12] | [22]		Big O=O(nlogn)
+
+4) siralamaya basla	[16] | [11,21] | [8] | [12,22] 
+
+5) devam		[11,16,21] | [8,12,22] 
+
+6) son			[8,11,12,16,21,22]
+
+
+
+***************proje 3***************
+
+[7,5,1,8,3,6,0,9,4,2] dizisinin Binary-Search-Tree asamalarini yaziniz.
+
+			7 'yi root alalim.
+		       / \
+ 		      5	  8
+		     / \   \	   \
+		    1   6   9
+		   / \
+   		  0   3
+		     / \
+		    2	4
+
+
